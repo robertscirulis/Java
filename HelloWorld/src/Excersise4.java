@@ -14,11 +14,10 @@ public class Excersise4 {
 
 		String output = str1 + str2 + str1;
 
-		if (str1.length() > str2.length() || str1.length() == str2.length() ) {
+		if (str1.length() > str2.length() || str1.length() == str2.length()) {
 
-			output = str2 + str1 + str2;			
+			output = str2 + str1 + str2;
 		}
-		
 
 		System.out.println("Output: '" + output + "'");
 
