@@ -9,10 +9,21 @@ public class HelloUser {
 		System.out.println("Ievadiet vardu un uzvardu ar atstarpi: ");
 		String vardsUzvards = scanner.nextLine();
 		
-		String Vards = vardsUzvards.
+		vardsUzvards = vardsUzvards.trim();
+		int index = vardsUzvards.indexOf(" ");
 		
 		
+		//String Vards = vardsUzvards.substring(0, 7);
 		
+		System.out.println("Index: " + index);
+		
+		String firstname = vardsUzvards.substring(0, index);
+		firstname = firstname.substring(0, 1).toUpperCase() + firstname.substring(1).toLowerCase();
+	    System.out.println("'" + firstname + "'");
+	    
+	    String lastname = vardsUzvards.substring(index).trim().toUpperCase();
+		
+	    System.out.println("'" + lastname + "'");
 		
 		
 		
