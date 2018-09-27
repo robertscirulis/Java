@@ -8,7 +8,7 @@ public class ArrayListExample {
 		int[] test = {-10, 1, 2, 3, 5, 66, 7, 100};
 		test[0] = -100;
 		
-		ArrayList al = new ArrayList();
+		ArrayList<Integer> al = new ArrayList();
 		System.out.println("al: " + al.size());
 		
 		al.add(-10);
