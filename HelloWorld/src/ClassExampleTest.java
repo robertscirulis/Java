@@ -8,8 +8,10 @@ public class ClassExampleTest {
 		ClassExample exampleOther = new ClassExample();
 		example.printZ();
 		
+		String m = example.toString();
 		
-		System.out.println("counter: " + ClassExample.counter);
+		System.out.println(m);
+		//System.out.println("counter: " + ClassExample.counter);
 		
 	}
 

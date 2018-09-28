@@ -31,8 +31,11 @@ public class DataValidator {
 			System.out.println("Not leap year.");
 		}
 
-		String[] monthNames = { "Janvaris", "Februaris", "Marts", "Aprilis", "Maijs", "Junijs", "Julijs", "Augusts",
-				"Septembris", "Oktobris", "Novembris", "Decembris" };
+		/*
+		 * String[] monthNames = { "Janvaris", "Februaris", "Marts", "Aprilis", "Maijs",
+		 * "Junijs", "Julijs", "Augusts", "Septembris", "Oktobris", "Novembris",
+		 * "Decembris" };
+		 */
 
 		switch (month) {
 
@@ -115,7 +118,7 @@ public class DataValidator {
 
 		System.out.println(date + ". " + monthName + ". " + year);
 
-//		System.out.println("date: " + date + ", month: " + month);
+//System.out.println("date: " + date + ", month: " + month);
 
 		scanner.close();
 	}
