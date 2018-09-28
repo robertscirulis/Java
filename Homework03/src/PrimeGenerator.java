@@ -5,27 +5,30 @@ public class PrimeGenerator {
 	public static void main(String[] args) {
 
 		Scanner scanner = new Scanner(System.in);
-		System.out.println("Ievadiet pirmsskaitlu daudzumu: ");
-
-		int skaits = scanner.nextInt();
+		
 		int length = 0;
+		
+		System.out.println("Ievadiet pirmsskaitlu daudzumu: ");
+		int skaits = scanner.nextInt();
+		
 
-		if (skaits > 0 && skaits <= 100) {
+		if (skaits > 0 && skaits < 100) {
 			length = skaits;
 		} else {
-			System.out.println("Nepareiza vertiba");
+			System.out.println("Nepareiza vertiba!");
 		}
+		
+		
 
 		int[] array = new int[length];
 		
-		int counter = 0;
 
-		for (int i = 0; i < array.length; i++) {
-			counter++;
-			if(counter % 2 == 0 || counter % 3 == 0) {
-				
+		for (int i = 1; i < array.length; i++) {
+
+			if(i % i == 0 || i % 1 == 0) {
+				array[i] = 0;
 			} else {
-				array[i] = counter;
+				array[i] = i;
 			}
 		}
 
