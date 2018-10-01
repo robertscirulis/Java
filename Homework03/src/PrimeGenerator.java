@@ -12,7 +12,7 @@ public class PrimeGenerator {
 		int skaits = scanner.nextInt();
 		
 
-		if (skaits > 0 && skaits < 100) {
+		if (skaits > 0 || skaits > 100) {
 			length = skaits;
 		} else {
 			System.out.println("Nepareiza vertiba!");

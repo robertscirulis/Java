@@ -17,6 +17,8 @@ public class SortArray {
 
 		int[] array = new int[length];
 
+		
+		//random integer generator
 		for (int i = 0; i < array.length; i++) {
 
 			int input = rnd.nextInt(100);
@@ -25,17 +27,17 @@ public class SortArray {
 				array[i] = input;
 			}
 		}
-
+		
+		//array before sorting
 		for (int i = 0; i < array.length; i++) {
 			System.out.print(array[i] + "'");
 		}
 		
-
+		//sorting
 		for (int i = 0; i < array.length; i++) {
-			int sort = array[i];
-			 
-			 
+			
 		}
+		
 		
 		
 		//Math.m(a, b);

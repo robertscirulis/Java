@@ -8,6 +8,7 @@ public class Rectangle {
 
 	//constructors
 	public Rectangle() {
+		this(0);
 	}
 
 	public Rectangle(int mala) {
@@ -17,8 +18,8 @@ public class Rectangle {
 
 
 	public Rectangle(int garums, int platums) {
-		length = garums;
-		width = platums;
+		this.length = garums;
+		this.width = platums;
 	}
 
 	//methods
@@ -37,5 +38,19 @@ public class Rectangle {
 		int result = mala1 + mala2;
 
 		return result;
+	}
+	
+	
+	public int getLength() {
+		return length;
+	}
+	
+	public int getWidth() {
+		return width;
+	}
+	
+	
+	public String toString() {
+		return "" + length + "x" + width + " " + "isSquare: " + isSquare();
 	}
 }
